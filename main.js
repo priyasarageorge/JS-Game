@@ -7,6 +7,7 @@ const winnerString = (round, winner) => `The winner of round ${round} is ${winne
 
 function playAgain() {
     let choiceVariable =  prompt("Do you want to play again: Yes/No","");
+    choiceVariable = choiceVariable.trim();
     choiceVariable = choiceVariable ? choiceVariable.toLowerCase() : choiceVariable;
     if(choiceVariable == "yes") resetGame();
     else console.log("Thank you for playing!Bye!");
