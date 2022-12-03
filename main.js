@@ -78,6 +78,7 @@ let checkWinner = function(userScore,computerScore) {
 
 function mainGame() {
     console.clear();
+    console.log(`Welcome ${userName} and ${computerName}`);
     for (let i=1; i<=5; i++) {
         playGame(i);
     }
@@ -87,7 +88,6 @@ function mainGame() {
 
 function playGame(round) {
     let userSelection = userPlay();
-    console.log('userSelection', userSelection)
     console.log(`${userName}'s selection is: `, userSelection);
     const computerSelection = computerPlay();
     console.log(`${computerName}'s selection is: `, computerSelection);
