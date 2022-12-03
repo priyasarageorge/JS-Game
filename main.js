@@ -28,6 +28,7 @@ function userPlay() {
     do {
         userChoice = prompt(`Enter your choice: Rock, Paper, Scissors. ${validChecker}`, "");
         if(userChoice) {
+            userChoice = userChoice.trim();
             userChoice = userChoice.toLowerCase();
         }
         validChecker = computerOptions.indexOf(userChoice)<0 ? "Please enter a valid option" : "";
